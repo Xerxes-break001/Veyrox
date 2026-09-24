@@ -211,10 +211,10 @@ section h2 span {
 }
 
 .work-card {
-    min-height: 330px;
+    min-height: 280px;
     padding: 30px;
     background: linear-gradient(145deg, #111111, #080808);
-    border: 3px solid #ff2b2b;
+    border: 1px solid #333333;
     border-radius: 4px;
     position: relative;
     overflow: hidden;
