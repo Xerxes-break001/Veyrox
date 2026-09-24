@@ -201,6 +201,7 @@ section h2 span {
     line-height: 1.6;
 }
 
+
 /* WORK */
 
 .work-grid {
@@ -219,6 +220,9 @@ section h2 span {
     position: relative;
     overflow: hidden;
     transition: 0.35s ease;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .work-card:hover {
@@ -236,7 +240,7 @@ section h2 span {
 }
 
 .work-card h3 {
-    margin-top: 130px;
+    margin-top: auto;
     font-size: 26px;
 }
 
@@ -244,6 +248,7 @@ section h2 span {
     margin-top: 12px;
     color: #777777;
     line-height: 1.6;
+    max-width: 240px;
 }
 
 
