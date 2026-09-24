@@ -138,3 +138,163 @@ section h2 {
     }
 
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    padding: 30px 7%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* RED GLOW */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #8b0000;
+    filter: blur(180px);
+    opacity: 0.18;
+    top: 10%;
+    right: -150px;
+    pointer-events: none;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff2b2b;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+    max-width: 900px;
+    margin-top: 22vh;
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow {
+    color: #ff2b2b;
+    font-size: 12px;
+    letter-spacing: 6px;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(60px, 10vw, 125px);
+    line-height: 0.9;
+    letter-spacing: -6px;
+    font-weight: 800;
+}
+
+h1 span {
+    color: #ff2b2b;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-top: 32px;
+    color: #888888;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 38px;
+    padding: 15px 27px;
+    border: 1px solid #ff2b2b;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #ff2b2b;
+    box-shadow: 0 0 35px rgba(255, 43, 43, 0.35);
+}
+
+/* SECTIONS */
+
+section {
+    min-height: 60vh;
+    padding: 100px 7%;
+    border-top: 1px solid #1c1c1c;
+}
+
+section h2 {
+    font-size: 50px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding: 25px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content {
+        margin-top: 25vh;
+    }
+
+    h1 {
+        font-size: 60px;
+        letter-spacing: -4px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+}
