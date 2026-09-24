@@ -156,8 +156,32 @@ section h2 span {
     padding: 35px;
     min-height: 280px;
     background: #0b0b0b;
-    border: 1px solid #1f1f1f;
+    border: 1px solid #292929;
     transition: 0.35s ease;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #ff2b2b;
+    filter: blur(90px);
+    opacity: 0;
+    top: -80px;
+    right: -80px;
+    transition: 0.35s ease;
+}
+
+.service-card:hover {
+    border-color: #ff2b2b;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(255, 43, 43, 0.12);
+}
+
+.service-card:hover::before {
+    opacity: 0.12;
 }
 
 .service-card:hover {
