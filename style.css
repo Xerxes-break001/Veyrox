@@ -241,8 +241,10 @@ section h2 span {
 
 .work-card h3 {
     margin-top: 70px;
-    font-size: 24px;
-    line-height: 1.2;
+    font-size: 22px;
+    line-height: 1.25;
+    max-width: 100%;
+    word-break: normal;
 }
 
 .work-card p {
