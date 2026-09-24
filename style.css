@@ -412,6 +412,73 @@ section h2 span {
 }
 
 
+/* FOOTER */
 
+footer {
+    padding: 70px 8% 30px;
+    border-top: 1px solid #222222;
+    background: #050505;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.footer-top p {
+    margin-top: 8px;
+    color: #777777;
+    font-size: 13px;
+}
+
+.footer-cta {
+    color: #ff2b2b;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.footer-cta:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding-top: 20px;
+    border-top: 1px solid #1c1c1c;
+    color: #555555;
+    font-size: 12px;
+}
+
+
+/* FOOTER MOBILE */
+
+@media (max-width: 800px) {
+
+    footer {
+        padding: 60px 25px 25px;
+    }
+
+    .footer-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        margin-top: 50px;
+    }
+}
 
 
