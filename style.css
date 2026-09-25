@@ -725,13 +725,7 @@ footer {
     }
 }
 
-.hero::before {
-    background: #ffffff !important;
-    opacity: 1 !important;
-    filter: none !important;
-    width: 300px !important;
-    height: 300px !important;
-}
+
 
 /* HERO GLOW FIX */
 
