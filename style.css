@@ -747,6 +747,33 @@ footer {
     margin-top: 10px;
 }
 
+/* =========================
+   SERVICES POLISH
+   ========================= */
+
+#services h2 {
+    margin-bottom: 50px;
+}
+
+.service-grid {
+    gap: 24px;
+}
+
+.service-card {
+    padding: 32px;
+}
+
+.service-card h3 {
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    line-height: 1.7;
+}
+
+
+
 
 
 
