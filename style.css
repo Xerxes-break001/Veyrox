@@ -673,6 +673,31 @@ footer {
     transform: translateY(-10px) scale(1.01) !important;
 }
 
+ /* =========================
+    PREMIUM BUTTON INTERACTION
+    ========================= */
+
+.hero-button,
+#contact .contact-button {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.hero-button:hover,
+#contact .contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(255, 43, 43, 0.25);
+}
+
+.hero-button:active,
+#contact .contact-button:active {
+    transform: translateY(0) scale(0.97);
+}
 
 
 
