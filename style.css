@@ -744,6 +744,15 @@ footer {
     }
 }
 
+.hero::before {
+    background: blue !important;
+    filter: none !important;
+    opacity: 1 !important;
+    width: 200px !important;
+    height: 200px !important;
+}
+
+
 
 
 
