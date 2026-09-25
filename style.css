@@ -682,10 +682,14 @@ footer {
     transform: translateY(0) scale(0.97);
 }
 
-
 /* =========================
-   HERO GLOW MOVEMENT
+   MOVING HERO GLOW
    ========================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
 
 .hero::before {
     content: "";
@@ -696,12 +700,19 @@ footer {
     border-radius: 50%;
     filter: blur(120px);
     opacity: 0.22;
-    top: 10%;
+
+    top: 5%;
     right: -150px;
+
     z-index: 0;
     pointer-events: none;
 
-    animation: heroGlowMove 5s ease-in-out infinite alternate;
+    animation: heroGlowMove 5s ease-in-out infinite alternate !important;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
 }
 
 @keyframes heroGlowMove {
@@ -710,10 +721,10 @@ footer {
     }
 
     50% {
-        transform: translate(-80px, 50px) scale(1.15);
+        transform: translate(-120px, 80px) scale(1.25);
     }
 
     100% {
-        transform: translate(40px, -30px) scale(0.95);
+        transform: translate(80px, -60px) scale(0.9);
     }
 }
