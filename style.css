@@ -729,5 +729,8 @@ footer {
     pointer-events: none;
 }
 
+.hero::before {
+    background: red !important;
+}
 
 
