@@ -733,4 +733,23 @@ footer {
     height: 300px !important;
 }
 
+/* HERO GLOW FIX */
+
+.hero::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #ff2b2b;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.25;
+    top: 10%;
+    right: -150px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
 
