@@ -700,19 +700,11 @@ footer {
     border-radius: 50%;
     filter: blur(120px);
     opacity: 0.22;
-
     top: 5%;
     right: -150px;
-
     z-index: 0;
     pointer-events: none;
-
-    animation: heroGlowMove 5s ease-in-out infinite alternate !important;
-}
-
-.hero > * {
-    position: relative;
-    z-index: 1;
+    animation: heroGlowMove 5s ease-in-out infinite alternate;
 }
 
 @keyframes heroGlowMove {
@@ -729,31 +721,9 @@ footer {
     }
 }
 
-.hero::before {
-    animation: heroGlowMove 2s linear infinite !important;
-    background: red !important;
-    filter: blur(80px) !important;
-}
-
-@keyframes heroGlowMove {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-300px);
-    }
-}
-
-.hero::before {
-    background: blue !important;
-    filter: none !important;
-    opacity: 1 !important;
-    width: 200px !important;
-    height: 200px !important;
-}
-
-.hero {
-    background: blue !important;
+.hero > * {
+    position: relative;
+    z-index: 1;
 }
 
 
