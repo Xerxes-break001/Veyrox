@@ -726,6 +726,26 @@ footer {
     z-index: 1;
 }
 
+/* =========================
+   FINAL HERO POLISH
+   ========================= */
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero h1 {
+    letter-spacing: -2px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 10px;
+}
 
 
 
