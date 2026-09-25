@@ -616,8 +616,9 @@ footer {
         margin-top: 45px;
     }
 }
-
-/* SCROLL REVEAL */
+/* =========================
+   SCROLL REVEAL
+   ========================= */
 
 .reveal {
     opacity: 0;
@@ -629,6 +630,7 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 /* =========================
    PREMIUM CARD HOVER
@@ -646,24 +648,17 @@ footer {
 .service-card:hover,
 .work-card:hover,
 .about-point:hover {
-    transform: translateY(-10px) !important;
+    transform: translateY(-10px) scale(1.01);
     border-color: #ff2b2b;
     box-shadow:
         0 18px 45px rgba(255, 43, 43, 0.16),
         0 0 20px rgba(255, 43, 43, 0.06);
 }
 
-}
 
-.service-card:hover,
-.work-card:hover,
-.about-point:hover {
-    transform: translateY(-10px) scale(1.01) !important;
-}
-
- /* =========================
-    PREMIUM BUTTON INTERACTION
-    ========================= */
+/* =========================
+   PREMIUM BUTTON
+   ========================= */
 
 .hero-button,
 #contact .contact-button {
@@ -687,50 +682,38 @@ footer {
     transform: translateY(0) scale(0.97);
 }
 
+
 /* =========================
    HERO GLOW MOVEMENT
    ========================= */
 
-
-@keyframes heroGlowMove {
-    0% {
-        transform: translate(0, 0) scale(1);
-        opacity: 0.12;
-    }
-
-    50% {
-        transform: translate(-100px, 60px) scale(1.3);
-        opacity: 0.28;
-    }
-
-    100% {
-        transform: translate(50px, -40px) scale(0.9);
-        opacity: 0.16;
-    }
-}
-
-
-
-/* HERO GLOW FIX */
-
 .hero::before {
     content: "";
-    display: block;
     position: absolute;
     width: 500px;
     height: 500px;
     background: #ff2b2b;
     border-radius: 50%;
     filter: blur(120px);
-    opacity: 0.25;
+    opacity: 0.22;
     top: 10%;
     right: -150px;
     z-index: 0;
     pointer-events: none;
+
+    animation: heroGlowMove 5s ease-in-out infinite alternate;
 }
 
-.hero::before {
-    background: red !important;
+@keyframes heroGlowMove {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-80px, 50px) scale(1.15);
+    }
+
+    100% {
+        transform: translate(40px, -30px) scale(0.95);
+    }
 }
-
-
