@@ -800,6 +800,37 @@ footer {
     line-height: 1.7;
 }
 
+/* =========================
+   ABOUT SECTION POLISH
+   ========================= */
+
+#about h2 {
+    margin-bottom: 30px;
+}
+
+.about-text {
+    max-width: 720px;
+    line-height: 1.8;
+    margin-bottom: 45px;
+}
+
+.about-points {
+    gap: 24px;
+}
+
+.about-point {
+    padding: 30px;
+}
+
+.about-point h3 {
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.about-point p {
+    line-height: 1.7;
+}
+
 
 
 
