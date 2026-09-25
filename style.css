@@ -667,9 +667,12 @@ footer {
 
 }
 
-.service-card:hover {
-    transform: scale(1.03) !important;
+.service-card:hover,
+.work-card:hover,
+.about-point:hover {
+    transform: translateY(-10px) scale(1.01) !important;
 }
+
 
 
 
