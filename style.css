@@ -667,6 +667,9 @@ footer {
 
 }
 
+.service-card:hover {
+    transform: scale(1.03) !important;
+}
 
 
 
