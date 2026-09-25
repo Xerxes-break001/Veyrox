@@ -699,12 +699,10 @@ footer {
     transform: translateY(0) scale(0.97);
 }
 
-/* =========================
-   HERO GLOW MOVEMENT
-   ========================= */
+/* HERO GLOW MOVEMENT */
 
 .hero::before {
-    animation: heroGlow 7s ease-in-out infinite alternate;
+    animation: heroGlow 4s ease-in-out infinite alternate;
 }
 
 @keyframes heroGlow {
@@ -713,7 +711,7 @@ footer {
     }
 
     to {
-        transform: translate(-35px, 25px) scale(1.08);
+        transform: translate(-80px, 50px) scale(1.2);
     }
 }
 
