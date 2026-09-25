@@ -23,18 +23,6 @@ body {
     overflow: hidden;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background: #8b0000;
-    filter: blur(180px);
-    opacity: 0.18;
-    top: 10%;
-    right: -150px;
-    pointer-events: none;
-}
 
 /* NAVIGATION */
 
@@ -703,10 +691,6 @@ footer {
    HERO GLOW MOVEMENT
    ========================= */
 
-.hero::before {
-    animation: heroGlowMove 5s ease-in-out infinite alternate;
-    transform-origin: center;
-}
 
 @keyframes heroGlowMove {
     0% {
