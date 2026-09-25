@@ -629,4 +629,31 @@ footer {
     }
 }
 
+/* =========================
+   SCROLL REVEAL
+   ========================= */
+
+section,
+.service-card,
+.work-card,
+.about-point {
+    animation: reveal 0.8s ease both;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+
+
 
