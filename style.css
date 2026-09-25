@@ -728,3 +728,23 @@ footer {
         transform: translate(80px, -60px) scale(0.9);
     }
 }
+
+.hero::before {
+    animation: heroGlowMove 2s linear infinite !important;
+    background: red !important;
+    filter: blur(80px) !important;
+}
+
+@keyframes heroGlowMove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-300px);
+    }
+}
+
+
+
+
+
