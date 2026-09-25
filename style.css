@@ -831,6 +831,28 @@ footer {
     line-height: 1.7;
 }
 
+/* =========================
+   CONTACT SECTION POLISH
+   ========================= */
+
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 25px;
+}
+
+.contact-text {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    line-height: 1.8;
+}
+
+#contact .contact-button {
+    display: inline-block;
+}
+
 
 
 
