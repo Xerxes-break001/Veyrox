@@ -853,6 +853,35 @@ footer {
     display: inline-block;
 }
 
+/* =========================
+   FOOTER POLISH
+   ========================= */
+
+footer {
+    padding-top: 50px;
+}
+
+.footer-top {
+    align-items: center;
+}
+
+.footer-logo {
+    letter-spacing: 2px;
+}
+
+.footer-cta {
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.footer-cta:hover {
+    transform: translateX(5px);
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+    padding-top: 20px;
+}
 
 
 
