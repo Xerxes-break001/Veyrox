@@ -772,6 +772,33 @@ footer {
     line-height: 1.7;
 }
 
+/* =========================
+   WORK SECTION POLISH
+   ========================= */
+
+#work h2 {
+    margin-bottom: 50px;
+}
+
+.work-grid {
+    gap: 24px;
+}
+
+.work-card {
+    padding: 32px;
+}
+
+.work-top {
+    margin-bottom: 35px;
+}
+
+.work-card h3 {
+    margin-bottom: 12px;
+}
+
+.work-card p {
+    line-height: 1.7;
+}
 
 
 
